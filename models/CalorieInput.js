@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class CalorieInput extends Model { }
 
-Project.init(
+CalorieInput.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,20 +11,17 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    food_name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
+    calorie_amount: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {
@@ -40,8 +37,8 @@ Project.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'calorieInput',
   }
 );
 
-module.exports = Project;
+module.exports = CalorieInput;
