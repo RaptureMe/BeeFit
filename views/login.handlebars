@@ -3,18 +3,18 @@
 
     <div class="form-box login">
         <h2>Login</h2>
-        <form action="#">
+        <form id="login-form" action="#">
             <div class="input-box">
                 <span class="icon">
                     <ion-icon name="mail-outline"></ion-icon>
                 </span>
-                <input type="email" required>
+                <input id="email-login" type="email" required>
                 <label>EMAIL</label>
             </div>
             <div class="input-box">
                 <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon>
                 </span>
-                <input type="password" required>
+                <input id="password-login" type="password" required>
                 <label>Password</label>
             </div>
             <div class="remember-forgot">
@@ -33,3 +33,5 @@
         </form>
     </div>
 </div>
+
+<script src="/js/login.js"></script>

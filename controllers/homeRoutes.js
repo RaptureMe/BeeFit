@@ -6,6 +6,10 @@ router.get('/', async (req, res) => {
   try {
     // Get all calorieInputs and JOIN with user data
     const calorieInputData = await CalorieInput.findAll({
+      where: {
+        // temporary code 
+        user_id: req.session.user_id || 1
+      },
       include: [
         {
           model: User,
