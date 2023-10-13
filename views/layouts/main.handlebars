@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,13 @@
 </head>
 
 <body>
-    
+
     <header>
         <h2 class="logo">Beefit</h2>
         <nav class="navigation">
             <a href="/">HOME</a>
             <a href="#">ABOUT</a>
-            <a href="#">TRACKER</a>
+            <a href="/profile">TRACKER</a>
             <a href="#">CONTACT</a>
             {{#if logged_in}}
             <button id="logoutButton" button class="btnLogin-popup">LOGOUT</button>
@@ -28,7 +29,7 @@
     <main>
         {{{body}}}
     </main>
-    
+
     <script src="/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -36,4 +37,5 @@
     <script src="/js/logout.js"></script>
     {{/if}}
 </body>
+
 </html>
