@@ -1,24 +1,18 @@
-<!-- Loop over each object in the calorieInputs array -->
-{{#each calorieInputs as |calorieInput| }}
-<div class="row mb-4 calorieInput">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/calorieInput/{{calorieInput.id}}">{{calorieInput.name}}</a>
-    </h2>
-    <p>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="calorie_amount">{{calorieInput.calorie_amount}}</span>
-      calories consumed
-    </p>
-    <p>{{calorieInput.food_name}}</p>
-    <p>Created by {{calorieInput.user.name}} on {{format_date calorieInput.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{calorieInput.description}}
-    </p>
-  </div>
-</div>
-{{/each}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/homecontent.css">
+</head>
+
+<body>
+    <div class="mainTitle">
+        <h1>WELCOME TO BEEFIT</h1>
+        <p>text about why people should use this app!</p>
+        <div>
+            <button><a href="/profile">LETS GET STARTED!</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

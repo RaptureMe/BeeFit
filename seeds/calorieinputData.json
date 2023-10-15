@@ -1,0 +1,42 @@
+[
+    {
+        "food_name": "pizza",
+        "calorie_amount": 120
+    },
+    {
+        "food_name": "hamburger",
+        "calorie_amount": 600
+    },
+    {
+        "food_name": "salad",
+        "calorie_amount": 20
+    },
+    {
+        "food_name": "spaghetti",
+        "calorie_amount": 220
+    },
+    {
+        "food_name": "fried chicken",
+        "calorie_amount": 420
+    },
+    {
+        "food_name": "apple",
+        "calorie_amount": 52
+    },
+    {
+        "food_name": "banana",
+        "calorie_amount": 105
+    },
+    {
+        "food_name": "grilled salmon",
+        "calorie_amount": 280
+    },
+    {
+        "food_name": "steak",
+        "calorie_amount": 679
+    },
+    {
+        "food_name": "mashed potatoes",
+        "calorie_amount": 214
+    }
+]

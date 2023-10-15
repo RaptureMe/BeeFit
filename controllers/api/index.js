@@ -3,6 +3,6 @@ const userRoutes = require('./userRoutes');
 const calorieRoutes = require('./calorieRoutes');
 
 router.use('/users', userRoutes);
-router.use('/calorie', calorieRoutes);
+router.use('/calories', calorieRoutes);
 
 module.exports = router;

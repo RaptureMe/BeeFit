@@ -6,6 +6,10 @@ router.get('/', async (req, res) => {
   try {
     // Get all calorieInputs and JOIN with user data
     const calorieInputData = await CalorieInput.findAll({
+      // where: {
+      //   // temporary code 
+      //   user_id: req.session.user_id || 1
+      // },
       include: [
         {
           model: User,
@@ -19,9 +23,9 @@ router.get('/', async (req, res) => {
 
     // Pass serialized data and session flag into template
 
-    res.render('homepage', { 
-      calorieInputs, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      calorieInputs,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     console.log(err);
