@@ -1,28 +1,3 @@
-{{!-- <!-- Loop over each object in the calorieInputs array -->
-{{#each calorieInputs as |calorieInput| }}
-<div class="row mb-4 calorieInput" data-aos="fade-up">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/calorieInput/{{calorieInput.id}}">{{calorieInput.food_name}}</a>
-    </h2>
-    <p>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="calorie_amount">{{calorieInput.calorie_amount}}</span>
-      calories consumed
-    </p>
-    <p>{{calorieInput.food_name}}</p>
-    <p>Created by {{calorieInput.user.name}} on {{format_date calorieInput.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{calorieInput.description}}
-    </p>
-  </div>
-</div>
-
-{{/each}} --}}
 <main class="profile">
   <div class="container">
     <div class="row">
@@ -46,28 +21,11 @@
         <h1>Calories?</h1>
         <input type="text" id="calorie_amount" />
         <br>
-        <button id="calorieSubmit" data-aos="flip-right" class="p-2 m-3 btn btn-primary">Submit</button>
+        <button id="calorieSubmit" data-aos="flip-right" class="p-2 m-3 btn btn-primary"
+          style="width: auto;">Submit</button>
       </div>
     </div>
   </div>
 </main>
 
-{{!-- <form class="form new-project-form">
-  <div class="form-group">
-    <label for="project-name">project name:</label>
-    <input class="form-input" type="text" id="project-name" name="project-name" />
-  </div>
-  <div class="form-group">
-    <label for="project-funding">needed funding ($):</label>
-    <input class="form-input" type="number" id="project-funding" name="project-funding" />
-  </div>
-  <div class="form-group">
-    <label for="project-desc">description:</label>
-    <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-  </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Create</button>
-  </div>
-</form>
-</div>--}}
 <script src="js/profile.js"></script>
