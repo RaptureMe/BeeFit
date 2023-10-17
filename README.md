@@ -1,6 +1,6 @@
 # BeeFit Fitness App
 
-![BeeFit Logo](your-logo-url.png)
+![BeeFit Logo]((https://files.slack.com/files-pri/T0573TH1GCC-F06183VP65C/gucci_bee.png))
 
 Welcome to BeeFit, your go-to fitness website for achieving and maintaining a healthy lifestyle through conscious food choices and tracking your calorie intake. This README.md provides an overview of our fitness app, its features, and how to get started.
 
