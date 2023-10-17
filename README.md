@@ -19,13 +19,8 @@ Welcome to BeeFit, your go-to fitness website for achieving and maintaining a he
 ### User Sign-up and Login
 BeeFit allows users to create an account by signing up with their email and password. Existing users can log in securely to access their personalized fitness data.
 
-### Food Diary
-- **Track Food Intake**: Users can input the foods they eat, specifying the type of food and the number of calories consumed. The system calculates total calories consumed.
-- **Personalized Calorie Goals**: BeeFit sets personalized calorie goals based on the user's profile and fitness objectives.
-
-### Weight Tracking
-- **Starting and Ending Weights**: Users can input their starting weight at the beginning of the week and track their progress by adding their weight at the end of the week.
-- **Weight Goal Setting**: BeeFit helps users set achievable weight goals and tracks their progress towards those goals.
+### Calorie Intake
+- **Track Food Intake**: Users can input the foods they eat, specifying the type of food and the number of calories consumed. 
 
 ### Future Goals
 
@@ -40,20 +35,21 @@ BeeFit is committed to continuous improvement and will introduce the following f
 
 To use BeeFit, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/beefit.git`
-2. Install the required dependencies: `npm install` or `yarn install`
+1. Clone the repository: `git clone https://github.com/RaptureMe/BeeFit.git`
+2. Install the required dependencies: `npm install`
 3. Configure the database settings in `config.js`.
-4. Run the application: `npm start` or `yarn start`
+4. Run the application: `npm start`
 5. Visit `http://localhost:3000` in your web browser.
 
 ## Tech Stack
 
 BeeFit is built using the following technologies:
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: SQL
-- Styling: CSS and Bootstrap
+- Frontend: HTML, CSS, JavaScript, Handlebars.js (Template Engine)
+- Backend: Node.js, Express.js, 
+- Database: MySQL, SQLize ORM
+- Styling: CSS, Bootstrap
+-Extra Library: AOS-Animation On Scroll Library
 
 ## Contributing
 -Alex Rosu
